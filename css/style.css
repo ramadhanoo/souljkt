@@ -1540,6 +1540,23 @@ ol {
 	justify-content: center;
 }
 
+.product__thumb_detail {
+	height: 120px;
+	width: 95px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	background-size: contain !important;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
 .product__details__pic .nav-tabs .nav-item .nav-link .product__thumb__pic i {
 	height: 56px;
 	width: 56px;
