@@ -65,7 +65,7 @@ const products = [
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-o"></i>
                             </div>
-                              <h5>IDR <s>${product.price}k</s> ${product.price}k</h5>
+                              <h5>IDR <s>${product.oldPrice}k</s> ${product.price}k</h5>
                    
                         </div>
                     </div>
