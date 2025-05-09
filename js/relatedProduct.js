@@ -1,45 +1,69 @@
 const products = [
-    {
-      name: "Soul Limited Terracotta",
-      image: "img/product/product-1.jpg",
-      imagesList: ["img/product/product-1.jpg", "img/product/p-1-detail-1.jpg", "img/product/p-1-detail-2.jpg"],
-      type: "hot-sales",
-      price: 259,
-      oldPrice: 319,
-      rating: 0,
-      colors: ["default", "black", "grey"],
-    },
-    {
-      name: "Soul Limited V-Neck Green",
-      image: "img/product/product-2.jpg",
-      imagesList: ["img/product/product-2.jpg", "img/product/p-2-detail-1.jpg", "img/product/p-2-detail-2.jpg"],
-      type: "new-arrivals",
-      price: 329,
-      oldPrice: 389,
-      rating: 4,
-      colors: ["default", "black", "grey"],
-    },
-    {
-      name: "Soul Limited V-Neck Navy",
-      image: "img/product/product-3.jpg",
-      imagesList: ["img/product/product-3.jpg", "img/product/p-3-detail-1.jpg", "img/product/p-3-detail-2.jpg"],
-      type: "new-arrivals",
-      price: 329,
-      oldPrice: 389,
-      rating: 4,
-      colors: ["default", "black", "grey"],
-    },
-    {
-      name: "Soul Limited V-Neck BW",
-      image: "img/product/product-4.jpg",
-      imagesList: ["img/product/product-4.jpg", "img/product/p-4-detail-1.jpg", "img/product/p-4-detail-2.jpg"],
-      type: "new-sales",
-      price: 329,
-      oldPrice: 389,
-      rating: 4,
-      colors: ["default", "black", "grey"],
-    },
-  ];
+  {
+    name: "Soul Limited Terracotta Sleeveless",
+    image: "img/product/product-1.jpg",
+    imagesList: [
+      "img/product/product-1.jpg",
+      "img/product/p-1-detail-1.jpg",
+      "img/product/p-1-detail-2.jpg",
+    ],
+    type: "hot-sales",
+    oldPrice: 319,
+    price: 259,
+    deskripsi:
+      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
+    rating: 0,
+    colors: ["default", "black", "grey"],
+  },
+  {
+    name: "Soul Limited V-Neck Long Sleeve Green",
+    image: "img/product/product-2.jpg",
+    imagesList: [
+      "img/product/product-2.jpg",
+      "img/product/p-2-detail-1.jpg",
+      "img/product/p-2-detail-2.jpg",
+    ],
+    type: "new-arrivals",
+    price: 329,
+    oldPrice: 389,
+    deskripsi:
+    "<p>Fit to XL</p> <p>Size: Bust 112 Length 68</p><p>Fabric: Linen</p>",
+    rating: 4,
+    colors: ["default", "black", "grey"],
+  },
+  {
+    name: "Soul Limited V-Neck Long Sleeve Navy",
+    image: "img/product/product-3.jpg",
+    imagesList: [
+      "img/product/product-3.jpg",
+      "img/product/p-3-detail-1.jpg",
+      "img/product/p-3-detail-2.jpg",
+    ],
+    type: "new-arrivals",
+    price: 329,
+    oldPrice: 389,
+    deskripsi:
+    "<p>Fit to XL</p> <p>Size: Bust 112 Length 68</p><p>Fabric: Linen</p>",
+    rating: 4,
+    colors: ["default", "black", "grey"],
+  },
+  {
+    name: "Soul Limited V-Neck Long Sleeve BW",
+    image: "img/product/product-4.jpg",
+    imagesList: [
+      "img/product/product-4.jpg",
+      "img/product/p-4-detail-1.jpg",
+      "img/product/p-4-detail-2.jpg",
+    ],
+    type: "new-sales",
+    price: 329,
+    oldPrice: 389,
+    deskripsi:
+    "<p>Fit to XL</p> <p>Size: Bust 106 Length 62</p><p>Fabric: Linen</p>",
+    rating: 4,
+    colors: ["default", "black", "grey"],
+  },
+];
   
   // Fungsi untuk render produk
   function renderProducts(products) {
@@ -51,7 +75,7 @@ const products = [
                 <div class="col-lg-3 col-md-6 col-sm-6 col-sm-6">
                     <div class="product__item sale">
                         <div class="product__item__pic set-bg" style="background-image: url(${product.image});">
-                            <span class="label">Sale</span>
+                            <span class="label">Limited</span>
                        <ul class="product__hover">
                                         <li><a href="#" onClick="goToDetail(event, ${index})"><img src="img/icon/compare.png" alt=""> <span>Detail</span></a>
                                     </ul>
