@@ -1,11 +1,12 @@
 const products = [
   {
-    name: "Soul Limited Terracotta Sleeveless",
+    name: "Terracotta Sleeveless",
     image: "img/product/product-1.jpg",
     imagesList: [
       "img/product/product-1.jpg",
       "img/product/p-1-detail-1.jpg",
       "img/product/p-1-detail-2.jpg",
+      "img/product/p-1-detail-3jpg",
     ],
     type: "hot-sales",
     oldPrice: 319,
@@ -16,7 +17,7 @@ const products = [
     colors: ["default", "black", "grey"],
   },
   {
-    name: "Soul Limited V-Neck Long Sleeve Green",
+    name: "V-Neck Long Sleeve Green",
     image: "img/product/product-2.jpg",
     imagesList: [
       "img/product/product-2.jpg",
@@ -32,7 +33,7 @@ const products = [
     colors: ["default", "black", "grey"],
   },
   {
-    name: "Soul Limited V-Neck Long Sleeve Navy",
+    name: "V-Neck Long Sleeve Navy",
     image: "img/product/product-3.jpg",
     imagesList: [
       "img/product/product-3.jpg",
@@ -48,7 +49,7 @@ const products = [
     colors: ["default", "black", "grey"],
   },
   {
-    name: "Soul Limited V-Neck Long Sleeve BW",
+    name: "V-Neck Long Sleeve BW",
     image: "img/product/product-4.jpg",
     imagesList: [
       "img/product/product-4.jpg",
@@ -64,7 +65,7 @@ const products = [
     colors: ["default", "black", "grey"],
   },
   {
-    name: "Soul Limited Black Oversized Long Sleeve Shirt",
+    name: "Black Oversized Long Sleeve Shirt",
     image: "img/product/product-5.jpg",
     imagesList: [
       "img/product/product-5.jpg",
@@ -80,7 +81,7 @@ const products = [
     colors: ["default", "black", "grey"],
   },
   {
-    name: "Soul Limited White Outer",
+    name: "Linen Outer",
     image: "img/product/product-6.jpg",
     imagesList: [
       "img/product/product-6.jpg",

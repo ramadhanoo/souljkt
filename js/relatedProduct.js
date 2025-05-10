@@ -1,11 +1,12 @@
 const products = [
   {
-    name: "Soul Limited Terracotta Sleeveless",
+    name: "Terracotta Sleeveless",
     image: "img/product/product-1.jpg",
     imagesList: [
       "img/product/product-1.jpg",
       "img/product/p-1-detail-1.jpg",
       "img/product/p-1-detail-2.jpg",
+      "img/product/p-1-detail-3jpg",
     ],
     type: "hot-sales",
     oldPrice: 319,
@@ -16,7 +17,7 @@ const products = [
     colors: ["default", "black", "grey"],
   },
   {
-    name: "Soul Limited V-Neck Long Sleeve Green",
+    name: "V-Neck Long Sleeve Green",
     image: "img/product/product-2.jpg",
     imagesList: [
       "img/product/product-2.jpg",
@@ -32,7 +33,7 @@ const products = [
     colors: ["default", "black", "grey"],
   },
   {
-    name: "Soul Limited V-Neck Long Sleeve Navy",
+    name: "V-Neck Long Sleeve Navy",
     image: "img/product/product-3.jpg",
     imagesList: [
       "img/product/product-3.jpg",
@@ -48,7 +49,7 @@ const products = [
     colors: ["default", "black", "grey"],
   },
   {
-    name: "Soul Limited V-Neck Long Sleeve BW",
+    name: "V-Neck Long Sleeve BW",
     image: "img/product/product-4.jpg",
     imagesList: [
       "img/product/product-4.jpg",
@@ -64,7 +65,6 @@ const products = [
     colors: ["default", "black", "grey"],
   },
 ];
-  
   // Fungsi untuk render produk
   function renderProducts(products) {
     const container = document.getElementById("product-shop");
@@ -87,7 +87,7 @@ const products = [
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star"></i>
                             </div>
                               <h5>IDR <s>${product.oldPrice}k</s> ${product.price}k</h5>
                    
@@ -168,7 +168,7 @@ const products = [
     event.preventDefault();
     const product = JSON.parse(sessionStorage.getItem('productDetail'));
     const phone = "6281296181928";
-    const message = `Halo item ${product.name} ready?`;
+    const message = `Hi SOUL, item ${product.name} ready?`;
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
     // Buka di tab baru seperti target="_blank"

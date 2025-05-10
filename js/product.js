@@ -6,6 +6,7 @@ const products = [
       "img/product/product-1.jpg",
       "img/product/p-1-detail-1.jpg",
       "img/product/p-1-detail-2.jpg",
+      "img/product/p-1-detail-3jpg",
     ],
     type: "hot-sales",
     oldPrice: 319,
@@ -80,7 +81,7 @@ const products = [
     colors: ["default", "black", "grey"],
   },
   {
-    name: "White Outer",
+    name: "Linen Outer",
     image: "img/product/product-6.jpg",
     imagesList: [
       "img/product/product-6.jpg",
@@ -113,13 +114,13 @@ function renderProducts(products) {
                                     </ul>
                         </div>
                         <div class="product__item__text">
-            <h6>${product.name}</h6>
+                            <h6>${product.name}</h6>
                             <div class="rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star"></i>
                             </div>
                               <h5>IDR <s>${product.oldPrice}k</s> ${product.price}k</h5>
                    
@@ -150,7 +151,7 @@ function goToDetail(event, index) {
 function directTerracota(event) {
   event.preventDefault();
   const phone = "6281296181928";
-  const message = `Halo item Soul Limited Terracotta ready?`;
+  const message = `Hi SOUL, Terracotta Sleeveless ready?`;
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
   // Buka di tab baru seperti target="_blank"
@@ -160,7 +161,7 @@ function directTerracota(event) {
 function directTerracotaOuter(event) {
   event.preventDefault();
   const phone = "6281296181928";
-  const message = `Halo item Soul Limited Terracotta + Outter putih ready?`;
+  const message = `Hi SOUL, Terracotta Sleeveless & Linen Outer putih ready?`;
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
   // Buka di tab baru seperti target="_blank"
@@ -170,7 +171,7 @@ function directTerracotaOuter(event) {
 function directaOuterHitam(event) {
   event.preventDefault();
   const phone = "6281296181928";
-  const message = `Halo item Soul Limited Outter hitam?`;
+  const message = `Hi SOUL, item Soul Limited Outter hitam?`;
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
   // Buka di tab baru seperti target="_blank"
@@ -180,7 +181,7 @@ function directaOuterHitam(event) {
 function directOuterPutih(event) {
   event.preventDefault();
   const phone = "6281296181928";
-  const message = `Halo item Soul Limited Outter putih?`;
+  const message = `Hi SOUL, item Soul Limited Outter putih?`;
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
   // Buka di tab baru seperti target="_blank"
