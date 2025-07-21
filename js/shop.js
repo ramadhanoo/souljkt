@@ -11,6 +11,7 @@ const products = [
     type: "hot-sales",
     oldPrice: 319,
     price: 259,
+        dsc: "SOLD OUT",
     deskripsi:
       "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
     rating: 0,
@@ -19,6 +20,7 @@ const products = [
   {
     name: "V-Neck Long Sleeve Green",
     image: "img/product/product-2.jpg",
+        dsc: "SOLD OUT",
     imagesList: [
       "img/product/product-2.jpg",
       "img/product/p-2-detail-1.jpg",
@@ -34,6 +36,7 @@ const products = [
   },
   {
     name: "V-Neck Long Sleeve Navy",
+        dsc: "SOLD OUT",
     image: "img/product/product-3.jpg",
     imagesList: [
       "img/product/product-3.jpg",
@@ -51,6 +54,7 @@ const products = [
   {
     name: "V-Neck Long Sleeve BW",
     image: "img/product/product-4.jpg",
+        dsc: "SOLD OUT",
     imagesList: [
       "img/product/product-4.jpg",
       "img/product/p-4-detail-1.jpg",
@@ -66,6 +70,7 @@ const products = [
   },
   {
     name: "Black Oversized Long Sleeve Shirt",
+        dsc: "SOLD OUT",
     image: "img/product/product-5.jpg",
     imagesList: [
       "img/product/product-5.jpg",
@@ -83,6 +88,7 @@ const products = [
   {
     name: "Linen Outer",
     image: "img/product/product-6.jpg",
+        dsc: "SOLD OUT",
     imagesList: [
       "img/product/product-6.jpg",
       "img/product/p-6-detail-1.jpg",
@@ -108,7 +114,7 @@ function renderProducts(products) {
 <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item sale">
 <div class="product__item__pic set-bg" style="background-image: url(${product.image});">
-                            <span class="label">Limited</span>
+                            <span class="label">${product.dsc}</span>
                                     <ul class="product__hover">
                                         <li><a href="#" onClick="goToDetail(event, ${index})"><img src="img/icon/compare.png" alt=""> <span>Detail</span></a>
                                     </ul>

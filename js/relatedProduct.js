@@ -9,6 +9,7 @@ const products = [
       "img/product/p-1-detail-3jpg",
     ],
     type: "hot-sales",
+    dsc: "SOLD OUT",
     oldPrice: 319,
     price: 259,
     deskripsi:
@@ -19,6 +20,7 @@ const products = [
   {
     name: "V-Neck Long Sleeve Green",
     image: "img/product/product-2.jpg",
+    dsc: "SOLD OUT",
     imagesList: [
       "img/product/product-2.jpg",
       "img/product/p-2-detail-1.jpg",
@@ -28,13 +30,14 @@ const products = [
     price: 329,
     oldPrice: 389,
     deskripsi:
-    "<p>Fit to XL</p> <p>Size: Bust 112 Length 68</p><p>Fabric: Linen</p>",
+      "<p>Fit to XL</p> <p>Size: Bust 112 Length 68</p><p>Fabric: Linen</p>",
     rating: 4,
     colors: ["default", "black", "grey"],
   },
   {
     name: "V-Neck Long Sleeve Navy",
     image: "img/product/product-3.jpg",
+    dsc: "SOLD OUT",
     imagesList: [
       "img/product/product-3.jpg",
       "img/product/p-3-detail-1.jpg",
@@ -44,13 +47,14 @@ const products = [
     price: 329,
     oldPrice: 389,
     deskripsi:
-    "<p>Fit to XL</p> <p>Size: Bust 112 Length 68</p><p>Fabric: Linen</p>",
+      "<p>Fit to XL</p> <p>Size: Bust 112 Length 68</p><p>Fabric: Linen</p>",
     rating: 4,
     colors: ["default", "black", "grey"],
   },
   {
     name: "V-Neck Long Sleeve BW",
     image: "img/product/product-4.jpg",
+    dsc: "SOLD OUT",
     imagesList: [
       "img/product/product-4.jpg",
       "img/product/p-4-detail-1.jpg",
@@ -60,22 +64,22 @@ const products = [
     price: 329,
     oldPrice: 389,
     deskripsi:
-    "<p>Fit to XL</p> <p>Size: Bust 106 Length 62</p><p>Fabric: Linen</p>",
+      "<p>Fit to XL</p> <p>Size: Bust 106 Length 62</p><p>Fabric: Linen</p>",
     rating: 4,
     colors: ["default", "black", "grey"],
   },
 ];
-  // Fungsi untuk render produk
-  function renderProducts(products) {
-    const container = document.getElementById("product-shop");
-  
-    let html = "";
-    products.forEach((product, index) => {
-      html += `
+// Fungsi untuk render produk
+function renderProducts(products) {
+  const container = document.getElementById("product-shop");
+
+  let html = "";
+  products.forEach((product, index) => {
+    html += `
                 <div class="col-lg-3 col-md-6 col-sm-6 col-sm-6">
                     <div class="product__item sale">
                         <div class="product__item__pic set-bg" style="background-image: url(${product.image});">
-                            <span class="label">Limited</span>
+                            <span class="label">${product.dsc}</span>
                        <ul class="product__hover">
                                         <li><a href="#" onClick="goToDetail(event, ${index})"><img src="img/icon/compare.png" alt=""> <span>Detail</span></a>
                                     </ul>
@@ -96,84 +100,83 @@ const products = [
                 </div>
     
           `;
-    });
-  
-    container.innerHTML = html;
-  
-    // Jika kamu pakai set-bg dengan JS, bisa aktifkan kembali ini (jika ada implementasinya)
-    // $('.set-bg').each(function () {
-    //   var bg = $(this).data('setbg');
-    //   $(this).css('background-image', 'url(' + bg + ')');
-    // });
-  }
+  });
 
-  function renderImages() {
-    const product = JSON.parse(sessionStorage.getItem('productDetail'));
-    const tabContent = document.querySelector(".tab-content");
-    tabContent.innerHTML = ""; 
-    const imageTabs = document.getElementById("image-tabs");
-    product.imagesList.forEach((img, index) => {
-      const li = document.createElement("li");
-      li.className = "nav-item";
-  
-      const a = document.createElement("a");
-      a.className = "nav-link" + (index === 0 ? " active" : "");
-      a.setAttribute("data-toggle", "tab");
-      a.setAttribute("href", `#tabs-${index + 1}`);
-      a.setAttribute("role", "tab");
-  
-      const div = document.createElement("div");
-      div.className = "product__thumb_detail";
-      div.style.backgroundImage = `url(${img})`;
+  container.innerHTML = html;
 
-      a.appendChild(div);
-      li.appendChild(a);
-      imageTabs.appendChild(li);
-    });
-
-    product.imagesList.forEach((img, index) => {
-        const tabId = `tabs-${index + 1}`;
-        const isActive = index === 0 ? "active" : "";
-      
-        const tabPane = document.createElement("div");
-        tabPane.className = `tab-pane ${isActive}`;
-        tabPane.id = tabId;
-        tabPane.setAttribute("role", "tabpanel");
-      
-        const picItem = document.createElement("div");
-        picItem.className = "product__details__pic__item";
-      
-        const imgTag = document.createElement("img");
-        imgTag.src = img;
-        imgTag.alt = "";
-      
-        picItem.appendChild(imgTag);
-      
-        // Tambahkan play button hanya di gambar terakhir (opsional)
-      
-        tabPane.appendChild(picItem);
-        tabContent.appendChild(tabPane);
-      });
+  // Jika kamu pakai set-bg dengan JS, bisa aktifkan kembali ini (jika ada implementasinya)
+  // $('.set-bg').each(function () {
+  //   var bg = $(this).data('setbg');
+  //   $(this).css('background-image', 'url(' + bg + ')');
+  // });
 }
-  
-  function goToDetail(event, index) {
-      event.preventDefault();
-      const product = products[index];
-      sessionStorage.setItem('productDetail', JSON.stringify(product));
-      window.location.href = 'shop-details.html';
-    }
 
-      
-  function directWa(event) {
-    event.preventDefault();
-    const product = JSON.parse(sessionStorage.getItem('productDetail'));
-    const phone = "6281296181928";
-    const message = `Hi SOUL, item ${product.name} ready?`;
-    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+function renderImages() {
+  const product = JSON.parse(sessionStorage.getItem("productDetail"));
+  const tabContent = document.querySelector(".tab-content");
+  tabContent.innerHTML = "";
+  const imageTabs = document.getElementById("image-tabs");
+  product.imagesList.forEach((img, index) => {
+    const li = document.createElement("li");
+    li.className = "nav-item";
 
-    // Buka di tab baru seperti target="_blank"
-    window.open(url, "_blank");
-  }
-  
+    const a = document.createElement("a");
+    a.className = "nav-link" + (index === 0 ? " active" : "");
+    a.setAttribute("data-toggle", "tab");
+    a.setAttribute("href", `#tabs-${index + 1}`);
+    a.setAttribute("role", "tab");
+
+    const div = document.createElement("div");
+    div.className = "product__thumb_detail";
+    div.style.backgroundImage = `url(${img})`;
+
+    a.appendChild(div);
+    li.appendChild(a);
+    imageTabs.appendChild(li);
+  });
+
+  product.imagesList.forEach((img, index) => {
+    const tabId = `tabs-${index + 1}`;
+    const isActive = index === 0 ? "active" : "";
+
+    const tabPane = document.createElement("div");
+    tabPane.className = `tab-pane ${isActive}`;
+    tabPane.id = tabId;
+    tabPane.setAttribute("role", "tabpanel");
+
+    const picItem = document.createElement("div");
+    picItem.className = "product__details__pic__item";
+
+    const imgTag = document.createElement("img");
+    imgTag.src = img;
+    imgTag.alt = "";
+
+    picItem.appendChild(imgTag);
+
+    // Tambahkan play button hanya di gambar terakhir (opsional)
+
+    tabPane.appendChild(picItem);
+    tabContent.appendChild(tabPane);
+  });
+}
+
+function goToDetail(event, index) {
+  event.preventDefault();
+  const product = products[index];
+  sessionStorage.setItem("productDetail", JSON.stringify(product));
+  window.location.href = "shop-details.html";
+}
+
+function directWa(event) {
+  event.preventDefault();
+  const product = JSON.parse(sessionStorage.getItem("productDetail"));
+  const phone = "6281296181928";
+  const message = `Hi SOUL, item ${product.name} ready?`;
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+  // Buka di tab baru seperti target="_blank"
+  window.open(url, "_blank");
+}
+
 document.addEventListener("DOMContentLoaded", () => renderProducts(products));
 document.addEventListener("DOMContentLoaded", () => renderImages());
