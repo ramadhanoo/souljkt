@@ -1,20 +1,132 @@
 const products = [
-    {
-    name: "Striped Shirt",
-    image: "img/product/product-14.jpg",
+  {
+    name: "Linen Pants (Espresso, Broken White, Black)",
+    image: "img/product/p-13-detail-1.jpg",
     dsc: "NEW",
     imagesList: [
-      "img/product/product-14.jpg",
-      "img/product/p-14-detail-1.jpg",
-      "img/product/p-14-detail-2.jpg",
+      "img/product/p-13-detail-1.jpg",
+      "img/product/p-12-detail-1.jpg",
+      "img/product/p-13-detail-2.jpg",
+      "img/product/p-13-detail-3.jpg",
+      "img/product/p-13-detail-4.jpg",
+      "img/product/p-13-detail-5.jpg",
+      "img/product/p-13-detail-6.jpg",
+      "img/product/p-13-detail-7.jpg",
+      "img/product/p-13-detail-8.jpg",
+      "img/product/p-13-detail-9.jpg",
+      "img/product/p-13-detail-10.jpg",
     ],
     type: "hot-sales",
     oldPrice: 719,
-    price: 399,
+    price: 659,
     deskripsi:
       "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
     rating: 0,
     colors: ["default", "Espresso", "Broken White"],
+  },
+  {
+    name: "Linen Ribbon",
+    image: "img/product/product-7.jpg",
+    dsc: "NEW",
+    imagesList: [
+      "img/product/product-7.jpg",
+      "img/product/p-7-detail-1.jpg",
+      "img/product/p-7-detail-2.jpg",
+      "img/product/p-7-detail-3.jpg",
+    ],
+    type: "hot-sales",
+    oldPrice: 514,
+    price: 499,
+    deskripsi:
+      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
+    rating: 0,
+    colors: ["default", "black", "grey"],
+  },
+  {
+    name: "Linen Vest",
+    image: "img/product/product-8.jpg",
+    dsc: "NEW",
+    imagesList: [
+      "img/product/product-8.jpg",
+      "img/product/p-8-detail-1.jpg",
+      "img/product/p-8-detail-2.jpg",
+      "img/product/p-8-detail-3.jpg",
+    ],
+    type: "hot-sales",
+    oldPrice: 527,
+    price: 449,
+    deskripsi:
+      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
+    rating: 0,
+    colors: ["default", "black", "grey"],
+  },
+  {
+    name: "Linen Rubber",
+    image: "img/product/product-9.jpg",
+    dsc: "NEW",
+    imagesList: [
+      "img/product/product-9.jpg",
+      "img/product/p-9-detail-1.jpg",
+      "img/product/p-9-detail-2.jpg",
+      "img/product/p-9-detail-3.jpg",
+    ],
+    type: "hot-sales",
+    oldPrice: 527,
+    price: 449,
+    deskripsi:
+      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
+    rating: 0,
+    colors: ["default", "black", "grey"],
+  },
+  {
+    name: "Linen Leaf & Floral",
+    image: "img/product/product-10.jpg",
+    dsc: "NEW",
+    imagesList: [
+      "img/product/product-10.jpg",
+      "img/product/p-10-detail-1.jpg",
+      "img/product/p-10-detail-2.jpg",
+      "img/product/p-10-detail-3.jpg",
+    ],
+    type: "hot-sales",
+    oldPrice: 512,
+    price: 499,
+    deskripsi:
+      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
+    rating: 0,
+    colors: ["default", "black", "grey"],
+  },
+
+  {
+    name: "Linen Shirt",
+    image: "img/product/product-12.jpg",
+    dsc: "NEW",
+    imagesList: ["img/product/product-12.jpg", "img/product/p-12-detail-1.jpg"],
+    type: "hot-sales",
+    oldPrice: 612,
+    price: 549,
+    deskripsi:
+      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
+    rating: 0,
+    colors: ["default", "black", "grey"],
+  },
+  {
+    name: "Linen Dress",
+    image: "img/product/product-11.jpg",
+    dsc: "NEW",
+    imagesList: [
+      "img/product/product-11.jpg",
+      "img/product/p-11-detail-1.jpg",
+      "img/product/p-11-detail-2.jpg",
+      "img/product/p-11-detail-3.jpg",
+    ],
+    type: "hot-sales",
+    oldPrice: 612,
+    price: 549,
+    deskripsi:
+      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
+    rating: 0,
+    colors: ["default", "black", "grey"],
   },
   {
     name: "Beige Ribbon",
@@ -34,96 +146,22 @@ const products = [
     rating: 0,
     colors: ["default", "Espresso", "Broken White"],
   },
-    {
-    name: "Linen Pants (Espresso, Broken White, Black)",
-    image: "img/product/p-13-detail-1.jpg",
+  {
+    name: "Striped Shirt",
+    image: "img/product/product-14.jpg",
     dsc: "NEW",
-    imagesList: ["img/product/p-13-detail-1.jpg", "img/product/p-12-detail-1.jpg", "img/product/p-13-detail-2.jpg", "img/product/p-13-detail-3.jpg", "img/product/p-13-detail-4.jpg", "img/product/p-13-detail-5.jpg", "img/product/p-13-detail-6.jpg", "img/product/p-13-detail-7.jpg", "img/product/p-13-detail-8.jpg", "img/product/p-13-detail-9.jpg", "img/product/p-13-detail-10.jpg",],
+    imagesList: [
+      "img/product/product-14.jpg",
+      "img/product/p-14-detail-1.jpg",
+      "img/product/p-14-detail-2.jpg",
+    ],
     type: "hot-sales",
     oldPrice: 719,
-    price: 659,
+    price: 399,
     deskripsi:
       "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
     rating: 0,
     colors: ["default", "Espresso", "Broken White"],
-  },
-    {
-    name: "Linen Shirt",
-    image: "img/product/product-12.jpg",
-    dsc: "NEW",
-    imagesList: ["img/product/product-12.jpg","img/product/p-12-detail-1.jpg"],
-    type: "hot-sales",
-    oldPrice: 612,
-    price: 549,
-    deskripsi:
-      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
-    rating: 0,
-    colors: ["default", "black", "grey"],
-  },
-  {
-    name: "Linen Dress",
-    image: "img/product/product-11.jpg",
-    dsc: "NEW",
-    imagesList: ["img/product/product-11.jpg","img/product/p-11-detail-1.jpg","img/product/p-11-detail-2.jpg","img/product/p-11-detail-3.jpg",],
-    type: "hot-sales",
-    oldPrice: 612,
-    price: 549,
-    deskripsi:
-      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
-    rating: 0,
-    colors: ["default", "black", "grey"],
-  },
-  {
-    name: "Linen Leaf & Floral",
-    image: "img/product/product-10.jpg",
-    dsc: "NEW",
-    imagesList: ["img/product/product-10.jpg", "img/product/p-10-detail-1.jpg", "img/product/p-10-detail-2.jpg", "img/product/p-10-detail-3.jpg"],
-    type: "hot-sales",
-    oldPrice: 512,
-    price: 499,
-    deskripsi:
-      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
-    rating: 0,
-    colors: ["default", "black", "grey"],
-  },
-  {
-    name: "Linen Rubber",
-    image: "img/product/product-9.jpg",
-    dsc: "NEW",
-    imagesList: ["img/product/product-9.jpg", "img/product/p-9-detail-1.jpg", "img/product/p-9-detail-2.jpg", "img/product/p-9-detail-3.jpg"],
-    type: "hot-sales",
-    oldPrice: 527,
-    price: 449,
-    deskripsi:
-      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
-    rating: 0,
-    colors: ["default", "black", "grey"],
-  },
-  {
-    name: "Linen Vest",
-    image: "img/product/product-8.jpg", 
-    dsc: "NEW",
-    imagesList: ["img/product/product-8.jpg", "img/product/p-8-detail-1.jpg", "img/product/p-8-detail-2.jpg", "img/product/p-8-detail-3.jpg"],
-    type: "hot-sales",
-    oldPrice: 527,
-    price: 449,
-    deskripsi:
-      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
-    rating: 0,
-    colors: ["default", "black", "grey"],
-  },
-  {
-    name: "Linen Ribbon",
-    image: "img/product/product-7.jpg",
-    dsc: "NEW",
-    imagesList: ["img/product/product-7.jpg", "img/product/p-7-detail-1.jpg", "img/product/p-7-detail-2.jpg", "img/product/p-7-detail-3.jpg"],
-    type: "hot-sales",
-    oldPrice: 514,
-    price: 499,
-    deskripsi:
-      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
-    rating: 0,
-    colors: ["default", "black", "grey"],
   },
   {
     name: "Terracotta Sleeveless",
@@ -254,7 +292,7 @@ function renderProducts(products) {
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
-                              <h5>IDR <s>${product.oldPrice}k</s> ${product.price}k</h5>
+                              <h5>IDR ${product.price}k</h5>
                    
                         </div>
                     </div>
@@ -283,7 +321,7 @@ function goToDetail(event, index) {
 function directTerracota(event) {
   event.preventDefault();
   const phone = "6281296181928";
-  const message = `Hi SOUL, Terracotta Sleeveless ready?`;
+  const message = `Hi SOUL, Linen Shirt ready?`;
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
   // Buka di tab baru seperti target="_blank"
@@ -293,7 +331,7 @@ function directTerracota(event) {
 function directTerracotaOuter(event) {
   event.preventDefault();
   const phone = "6281296181928";
-  const message = `Hi SOUL, Terracotta Sleeveless & Linen Outer putih ready?`;
+  const message = `Hi SOUL, Linen Ribbon ready?`;
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
   // Buka di tab baru seperti target="_blank"
@@ -303,7 +341,7 @@ function directTerracotaOuter(event) {
 function directaOuterHitam(event) {
   event.preventDefault();
   const phone = "6281296181928";
-  const message = `Hi SOUL, item Soul Limited Outter hitam?`;
+  const message = `Hi SOUL, item Linen Vest?`;
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
   // Buka di tab baru seperti target="_blank"

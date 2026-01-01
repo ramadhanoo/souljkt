@@ -335,7 +335,7 @@
     
                 // Contoh: masukkan ke dalam elemen HTML (asumsikan kamu punya elemen dengan ID tertentu)
                 document.querySelector('.product__details__text h4').textContent = product.name;
-                document.getElementById('prices').innerHTML = `IDR <s>${product.oldPrice}k</s> ${product.price}K`;
+                document.getElementById('prices').innerHTML = `IDR ${product.price}K`;
                 document.querySelector('.product__details__text p').textContent = product.description;
                 document.getElementById('desc').innerHTML = product.deskripsi;
             } else {
