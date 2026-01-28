@@ -1,5 +1,5 @@
 const products = [
-    {
+  {
     name: "Linen Pants (Espresso, Broken White, Black)",
     image: "img/product/p-13-detail-1.jpg",
     dsc: "NEW",
@@ -18,9 +18,9 @@ const products = [
     ],
     type: "hot-sales",
     oldPrice: 719,
-    price: 659,
+    price: 859,
     deskripsi:
-      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
+     "<p>Fabric: Natural Linen </p> <p>Size: S-M-L-Xl</p>",
     rating: 0,
     colors: ["default", "Espresso", "Broken White"],
   },
@@ -36,9 +36,9 @@ const products = [
     ],
     type: "hot-sales",
     oldPrice: 514,
-    price: 499,
+    price: 699,
     deskripsi:
-      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
+      "",
     rating: 0,
     colors: ["default", "black", "grey"],
   },
@@ -54,9 +54,9 @@ const products = [
     ],
     type: "hot-sales",
     oldPrice: 527,
-    price: 449,
+    price: 649,
     deskripsi:
-      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
+      "",
     rating: 0,
     colors: ["default", "black", "grey"],
   },
@@ -72,9 +72,9 @@ const products = [
     ],
     type: "hot-sales",
     oldPrice: 527,
-    price: 449,
+    price: 649,
     deskripsi:
-      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
+      "",
     rating: 0,
     colors: ["default", "black", "grey"],
   },
@@ -90,9 +90,9 @@ const products = [
     ],
     type: "hot-sales",
     oldPrice: 549,
-    price: 549,
+    price: 749,
     deskripsi:
-      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
+      "",
     rating: 0,
     colors: ["default", "black", "grey"],
   },
@@ -104,9 +104,9 @@ const products = [
     imagesList: ["img/product/product-12.jpg", "img/product/p-12-detail-1.jpg"],
     type: "hot-sales",
     oldPrice: 612,
-    price: 549,
+    price: 749,
     deskripsi:
-      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
+      "",
     rating: 0,
     colors: ["default", "black", "grey"],
   },
@@ -122,9 +122,9 @@ const products = [
     ],
     type: "hot-sales",
     oldPrice: 612,
-    price: 549,
+    price: 749,
     deskripsi:
-      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
+      "",
     rating: 0,
     colors: ["default", "black", "grey"],
   },
@@ -142,7 +142,7 @@ const products = [
     oldPrice: 719,
     price: 349,
     deskripsi:
-      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
+      "",
     rating: 0,
     colors: ["default", "Espresso", "Broken White"],
   },
@@ -159,7 +159,7 @@ const products = [
     oldPrice: 719,
     price: 399,
     deskripsi:
-      "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
+      "",
     rating: 0,
     colors: ["default", "Espresso", "Broken White"],
   },

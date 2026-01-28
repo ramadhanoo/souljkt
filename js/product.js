@@ -18,7 +18,7 @@ const products = [
     ],
     type: "hot-sales",
     oldPrice: 719,
-    price: 659,
+    price: 859,
     deskripsi:
      "<p>Fabric: Natural Linen </p> <p>Size: S-M-L-Xl</p>",
     rating: 0,
@@ -36,7 +36,7 @@ const products = [
     ],
     type: "hot-sales",
     oldPrice: 514,
-    price: 499,
+    price: 699,
     deskripsi:
       "",
     rating: 0,
@@ -54,7 +54,7 @@ const products = [
     ],
     type: "hot-sales",
     oldPrice: 527,
-    price: 449,
+    price: 649,
     deskripsi:
       "",
     rating: 0,
@@ -72,7 +72,7 @@ const products = [
     ],
     type: "hot-sales",
     oldPrice: 527,
-    price: 449,
+    price: 649,
     deskripsi:
       "",
     rating: 0,
@@ -90,7 +90,7 @@ const products = [
     ],
     type: "hot-sales",
     oldPrice: 549,
-    price: 549,
+    price: 749,
     deskripsi:
       "",
     rating: 0,
@@ -104,7 +104,7 @@ const products = [
     imagesList: ["img/product/product-12.jpg", "img/product/p-12-detail-1.jpg"],
     type: "hot-sales",
     oldPrice: 612,
-    price: 549,
+    price: 749,
     deskripsi:
       "",
     rating: 0,
@@ -122,7 +122,7 @@ const products = [
     ],
     type: "hot-sales",
     oldPrice: 612,
-    price: 549,
+    price: 749,
     deskripsi:
       "",
     rating: 0,
@@ -191,7 +191,7 @@ const products = [
       "img/product/p-2-detail-2.jpg",
     ],
     type: "new-arrivals",
-    price: 429,
+    price: 629,
     oldPrice: 429,
     deskripsi:
       "<p>Fit to XL</p> <p>Size: Bust 112 Length 68</p><p>Fabric: Linen</p>",
@@ -208,7 +208,7 @@ const products = [
     ],
     type: "new-arrivals",
     dsc: "SOLD OUT",
-    price: 429,
+    price: 629,
     oldPrice: 429,
     deskripsi:
       "<p>Fit to XL</p> <p>Size: Bust 112 Length 68</p><p>Fabric: Linen</p>",
@@ -225,7 +225,7 @@ const products = [
       "img/product/p-4-detail-2.jpg",
     ],
     type: "new-sales",
-    price: 429,
+    price: 629,
     oldPrice: 429,
     deskripsi:
       "<p>Fit to XL</p> <p>Size: Bust 106 Length 62</p><p>Fabric: Linen</p>",
@@ -245,7 +245,7 @@ const products = [
     deskripsi:
       "<p>Fit to XXL</p> <p>Size: Bust 120 Length 75</p><p>Fabric: Linen</p>",
     oldPrice: 399,
-    price: 399,
+    price: 599,
     rating: 4,
     colors: ["default", "black", "grey"],
   },
@@ -260,7 +260,7 @@ const products = [
     ],
     type: "new-sales",
     oldPrice: 549,
-    price: 549,
+    price: 749,
     deskripsi:
       "<p>Fit to XXL</p> <p>Size: Bust 120 Length 75</p><p>Fabric: Linen</p>",
     rating: 4,
