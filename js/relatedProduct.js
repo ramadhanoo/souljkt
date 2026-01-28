@@ -89,8 +89,8 @@ const products = [
       "img/product/p-10-detail-3.jpg",
     ],
     type: "hot-sales",
-    oldPrice: 512,
-    price: 499,
+    oldPrice: 549,
+    price: 549,
     deskripsi:
       "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
     rating: 0,
