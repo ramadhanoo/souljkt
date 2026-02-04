@@ -157,7 +157,7 @@ const products = [
     ],
     type: "hot-sales",
     oldPrice: 719,
-    price: 399,
+    price: 499,
     deskripsi:
       "",
     rating: 0,
@@ -175,7 +175,7 @@ const products = [
     ],
     type: "hot-sales",
     oldPrice: 319,
-    price: 259,
+    price: 359,
     deskripsi:
       "<p>Fit to XL</p> <p>Size: Bust 110 Length 62</p><p>Fabric: Cotton</p>",
     rating: 0,

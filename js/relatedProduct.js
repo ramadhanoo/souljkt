@@ -157,7 +157,7 @@ const products = [
     ],
     type: "hot-sales",
     oldPrice: 719,
-    price: 399,
+    price: 499,
     deskripsi:
       "",
     rating: 0,
